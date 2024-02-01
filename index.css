@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.body{
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.banner{
+    width: 100%;
+    height: 3rem;
+    background-color: rgb(179, 99, 186);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.banner > p{
+    font-size: 20px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    font-weight: 900;
+    padding: 0;
+    text-align: center;
+    align-self: center;
+}
+
+.field-value{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    gap: 15px;
+    margin-top: 40px;
+}
+
+.form-container{
+   justify-content: center;
+   display: flex;
+}
+
+  .form-field:focus-within {
+    position: relative;
+  }
+  
+  .form-field:focus-within label {
+    position: absolute;
+    top: 0.5rem;
+    left: 10px;
+    font-size: 12px;
+    background: white;
+    padding: 0 5px;
+  }
+  
+  .form-field:focus-within input {
+    padding: 8px 5px 5px;
+  }
+
+  .hidden{
+    position: absolute;
+    margin:0 0 0 2px;
+  }
+
+  input:focus::placeholder {
+    opacity: 1;
+  }
+
+  input::placeholder{
+    opacity: 0;
+  }
+
+
+.form-item{
+    padding: 1rem;
+    padding:1rem 0 0.5rem 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.submit-button{
+    background-color: purple;
+    width: 5rem;
+    height: 2rem;
+
+}
+.form-name-width{
+    width:16rem;
+}
+#male #female #other{
+    padding-left: 3px;
+}
