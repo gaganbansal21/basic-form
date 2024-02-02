@@ -47,3 +47,5 @@ function mobilehandlefocusout(elem){
     
 }
 
+addEventListener("submit", (event) => {alert("Your Data has been Sent to oUr team ! We will Conatct you shortly")});
+
