@@ -17,8 +17,58 @@ function checkPhone(){
         }
 }
 
-
-window.onload = () =>{
-    document.getElementById("telephone").onchange = checkPhone;
-  document.getElementById("telephone").oninput = checkPhone;
+const labelsarr = {
+    "name": 0,
+    "email": 1,
+    "telephone": 2,
 }
+
+function handlefocusin(elem){
+    const el = document.getElementById("label");
+    console.log(el)
+    el.classList.remove("hidden");
+}
+
+function handleFocusOut(elem){
+
+    if(elem.value === ""){
+        const el = document.getElementById("label");
+        el.classList.add("hidden");
+    }
+    
+}
+
+
+function emailhandlefocusin(elem){
+    const el = document.getElementById("email-label");
+    console.log(el)
+    el.classList.remove("hidden");
+}
+
+function emailhandleFocusOut(elem){
+
+    if(elem.value === ""){
+        const el = document.getElementById("email-label");
+        el.classList.add("hidden");
+    }
+    
+}
+
+
+function mobilehandlefocusin(elem){
+    const el = document.getElementById("tel-label");
+    console.log(el)
+    el.classList.remove("hidden");
+}
+
+
+
+function mobilehandlefocusout(elem){
+
+    if(elem.value === ""){
+        const el = document.getElementById("tel-label");
+        el.classList.add("hidden");
+    }
+    
+}
+

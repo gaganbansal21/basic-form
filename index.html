@@ -16,40 +16,53 @@
     <div class="form-container" action="/#">
         <form class="form">
             <fieldset class="field-value ">
+
                 <div class="form-item form-field">
-                    <label for="fname" class="hidden" type="hidden">User Name</label>
-                    <input class="form-name-width form-name"  name="fname" id="name" type="text"  pattern="(^[A-Za-z]{1,16})([ ]{0,1})([A-Za-z]{1,16})?([ ]{0,1})?([A-Za-z]{1,16})?([ ]{0,1})?([A-Za-z]{1,16})""
-                        title="use 0-9,a-z,A-Z is valid" placeholder="UserName" required />
+                    <label for="fname" id="label" class="hidden labeltext">User Name</label>
+                    <input class="form-name-width form-name" placeholder="User Name" onfocus="handlefocusin(this)"
+                        onfocusout="handleFocusOut(this)" name="fname" id="name" type="text"
+                        pattern="(^[A-Za-z]{1,16})([ ]{0,1})([A-Za-z]{1,16})?([ ]{0,1})?([A-Za-z]{1,16})?([ ]{0,1})?([A-Za-z]{1,16})"
+                        title=" use 0-9,a-z,A-Z is valid" required />
+                </div>
+
+
+                <div class="form-item form-field">
+                    <label for="fname" id="email-label" class="hidden labeltext">Email</label>
+                    <input class="form-name-width form-name" placeholder="Email " onfocus="emailhandlefocusin(this)"
+                        onfocusout="emailhandleFocusOut(this)" name="fname" type="text"
+                        id="email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
+                        title=" use 0-9,a-z,A-Z is valid" required />
+                </div>
+
+                <div>
+                    <p>Gender</p>
+                    <input type="radio" id="male" name="gender" value="Male" checked>
+                    <label for="html">Male</label><br>
+                    <input type="radio" id="female" name="gender" value="Female">
+                    <label for="css">Female</label><br>
+                    <input type="radio" id="Other" name="gender" value="Other">
+                    <label for="javascript">Other</label>
                 </div>
                 
-                    <div class="form-item form-field">
-                        <label class="hidden" for="email">Email</label>
-                        <input class="form-name-width form-email" name="email" id="email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
-                            title="Invalid email address" placeholder="me@gmail.com" type="email"
-                            required />
-                    </div>
 
-                    <div>
-                        <p>Gender</p>
-                        <input type="radio" id="male" name="gender" value="Male" checked>
-                        <label for="html">Male</label><br>
-                        <input type="radio" id="female" name="gender" value="Female">
-                        <label for="css">Female</label><br>
-                        <input type="radio" id="Other" name="gender" value="Other">
-                        <label for="javascript">Other</label>
-                    </div>
+                <div class="form-item form-field">
+                    <label for="tel" id="tel-label" class="hidden labeltext">Mobile</label>
+                    <input class=" form-name-width form-tel" value="" placeholder="93552XXXXX"
+                    onfocus="mobilehandlefocusin(this)"
+                        onfocusout="mobilehandlefocusout(this)"
+                        pattern="^([7-9]{1}[0-9]{9})$" name="tel" id="telephone" type="number" required />
+                </div>
 
+                <div class="form-item form-field">
+                    
+                    
+                </div>
 
-                    <div class="form-item form-field">
-                        <label class="hidden" for="tel">Mobile</label>
-                        <input class=" form-name-width form-tel" value="" placeholder="93552XXXXX" pattern="^([7-9]{1}[0-9]{9})$" name="tel"
-                            id="telephone" type="number" required />
-                    </div>
-                    <div>
-                        <input type="checkbox" name="subscribe-to-newsletter" id="subscribe" required />
-                        <label for="subscribe">Subscribe to our Newsletter</label>
-                    </div>
-                    <button class="submit-button" value="Validate" type="submit">Submit</button>
+                <div>
+                    <input type="checkbox" name="subscribe-to-newsletter" id="subscribe" required />
+                    <label for="subscribe">Subscribe to our Newsletter</label>
+                </div>
+                <button class="submit-button" value="Validate" type="submit">Submit</button>
             </fieldset>
         </form>
     </div>
