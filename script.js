@@ -1,31 +1,6 @@
-function checkPhone(){
-
-        const constraints = 
-        [
-            "^(?:(?:\+|0{0,2})91(\s*\s*)?|[0]?)?[789]\d{9}$",
-           "Your Number Should be Pattern of +91xxx.. or xxx.. or 0xxx... upto 10 digit"
-        ];
-        const num = document.getElementById("telephone");
-
-        const up = new RegExp(constraints[0]).test(num.value);
-        console.log("fi");
-        if(0){
-            num.setCustomValidity("");
-        }
-        else{
-            num.setCustomValidity(constraints[1]);
-        }
-}
-
-const labelsarr = {
-    "name": 0,
-    "email": 1,
-    "telephone": 2,
-}
 
 function handlefocusin(elem){
     const el = document.getElementById("label");
-    console.log(el)
     el.classList.remove("hidden");
 }
 
