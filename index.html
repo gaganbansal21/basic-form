@@ -19,7 +19,7 @@
 
                 <div class="form-item form-field">
                     <label for="fname" id="label" class="hidden labeltext">User Name</label>
-                    <input class="form-name-width form-name" placeholder="User Name" onfocus="handlefocusin(this)"
+                    <input class="form-name-width form-name" placeholder="Enter Your Name" onfocus="handlefocusin(this)"
                         onfocusout="handleFocusOut(this)" name="fname" id="name" type="text"
                         pattern="(^[A-Za-z]{1,16})([ ]{0,1})([A-Za-z]{1,16})?([ ]{0,1})?([A-Za-z]{1,16})?([ ]{0,1})?([A-Za-z]{1,16})"
                         title=" use 0-9,a-z,A-Z is valid" required />
@@ -50,19 +50,18 @@
                     <input class=" form-name-width form-tel" value="" placeholder="93552XXXXX"
                     onfocus="mobilehandlefocusin(this)"
                         onfocusout="mobilehandlefocusout(this)"
-                        pattern="^([7-9]{1}[0-9]{9})$" name="tel" id="telephone" type="number" required />
+                        pattern="^([7-9]{1}[0-9]{9})$" name="tel" id="telephone" type="text" required title="only Nnumbser 0-9 are allowed" />
                 </div>
 
-                <div class="form-item form-field">
-                    
-                    
-                </div>
 
                 <div>
                     <input type="checkbox" name="subscribe-to-newsletter" id="subscribe" required />
                     <label for="subscribe">Subscribe to our Newsletter</label>
                 </div>
-                <button class="submit-button" value="Validate" type="submit">Submit</button>
+                <div>
+                    <button class="submit-button" value="Validate" type="submit">Submit</button>
+                </div>
+               
             </fieldset>
         </form>
     </div>
